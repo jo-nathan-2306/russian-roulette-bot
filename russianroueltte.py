@@ -48,11 +48,12 @@ async def quit(ctx):
 @client.command()
 async def roll(ctx):
     global rolled,game_going_on
-    game_going_on= True
-    rolled= True
+    
     global chosen
     chosen=random.choice(people)
     if len(people)>1:
+        game_going_on= True
+        rolled= True
         await ctx.send(f"The barrel has been rolled,1 person out of {len(people)} will die")
     else:
         await ctx.send("Lmao wait for more people")
