@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import os
 game_going_on= False
 rolled= False
 people=[]
@@ -83,4 +84,4 @@ async def shoot(ctx):
             await ctx.send("Dumbass roll the gun")
     else:
         await ctx.send("You ether already tried or you didnt join")
-client.run("Nzg5NzQ3NTQ5MzU4NjUzNDkw.X92juA.iux-mWUyX7waEcACLDhTD11nhzw")
+client.run(os.environ['DISCORD_TOKEN'])
