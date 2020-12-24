@@ -84,5 +84,5 @@ async def shoot(ctx):
         else:
             await ctx.send("Dumbass roll the gun")
     else:
-        await ctx.send("You ether already tried or you didnt join")
+        await ctx.send("You either already tried or you didnt join")
 client.run(os.environ['DISCORD_TOKEN'])
